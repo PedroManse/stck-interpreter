@@ -1,4 +1,4 @@
-# An interpreter for the [STCK](https://crates.io/crates/stck/0.3.0) language
+# An interpreter for the [STCK](https://crates.io/crates/stck) language
 
 ## With several execution modes
 
