@@ -40,7 +40,7 @@ fn execute(
     file_path: PathBuf,
     file_cache: &mut impl cache::FileCacher,
     exec_ctx: &mut RuntimeContext,
-) -> Result<(), Error> {
+) -> Result<(), stck::Error> {
     use StckMode as M;
     match mode {
         M::Normal | M::Debug => {
@@ -76,7 +76,7 @@ fn main() {
 
     if let Err(e) = execute(mode, file, &mut file_cacher, &mut ctx) {
         eprintln!("\n{e}");
-        if let Error::RuntimeError(e) = e {
+        if let stck::Error::RuntimeError(e) = e {
             let spans: stck::error::ErrorSpans = e.into();
             let sources = spans.try_into_sources(&mut file_cacher).unwrap();
             for source in sources {

@@ -145,9 +145,9 @@ dependencies = [
 
 [[package]]
 name = "stck"
-version = "0.3.4"
+version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8ac94d2c2732a9363b1e708f24558411749aa9807c662b622ca9a1131dae5896"
+checksum = "38acb8bc1b7fd2c1940ab5a5ae572a5d7c03bab7ea29f962459fbedbb4888f67"
 dependencies = [
  "colored",
  "thiserror",
@@ -155,7 +155,7 @@ dependencies = [
 
 [[package]]
 name = "stck-interpreter"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "clap",
  "colored",
